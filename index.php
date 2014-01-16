@@ -92,7 +92,7 @@ if (defined('ENVIRONMENT'))
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="<?php echo "/".$resources_path."/design/css/main.css"; ?>>
   </head>
   
   <body>
