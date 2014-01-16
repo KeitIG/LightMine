@@ -137,7 +137,7 @@ else{
         ?>
     </header>
     
-    <section>
+    <section id="main">
         <?php           
             include($src_path."/pages/".$page.".php");    
         ?>
