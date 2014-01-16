@@ -29,7 +29,7 @@ $plugins_path = "plugins";
 |
 */
 
-$array = array('sql', 'users');
+$activated_plugins = array('sql', 'users');
 
 /*
 |
