@@ -2,7 +2,7 @@
 
 /*
                           /-------------------------------------------------------------------------\
-                         |-------------------------MINE FRAMEWORK v0.1 ALPHA-------------------------|
+                         |--------------------------- LIGHTMINE FRAMEWORK ---------------------------|
                           \-------------------------------------------------------------------------/ 
 */
 
@@ -25,14 +25,6 @@ $plugins_path = "plugins";
 
 /*
 |
-| ------------------------- ACTIVATED PLUGINS
-|
-*/
-
-$activated_plugins = array('sql', 'users');
-
-/*
-|
 | ------------------------- ONLINE/OFFLINE
 |
 */
@@ -49,6 +41,18 @@ else
         case 'offline': 
             exit('website offline');
     }
+
+
+
+/*
+|
+| ------------------------- ACTIVATED PLUGINS
+|
+*/
+
+$activated_plugins = array('sql', 'users');
+
+
     
 /*
 |
@@ -73,6 +77,7 @@ if (defined('ENVIRONMENT'))
 			exit("L'application n'est pas correctement configurée.");
 	}
 }
+
 
 
 /*
