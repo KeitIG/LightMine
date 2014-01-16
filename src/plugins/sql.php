@@ -1,18 +1,19 @@
 <?php
 
 	$SQL_host = 'localhost'; // path of your SQL server
-	$SQL_port = '3306';
-	$SQL_database_name = 'test'; // your database name
-	$SQL_user_name = 'root'; // username used to connect to your database
-	$SQL_user_password = 'IceTea0nline'; // username password
+	$SQL_port = '';
+	$SQL_database_name = ''; // your database name
+	$SQL_user_name = ''; // username used to connect to your database
+	$SQL_user_password = ''; // username password
 	
-	$SQL = new PDO('mysql:host='.SQL_host.';port='.$SQL_port.';dbname='.$SQL_database_name, $SQL_user_name, $SQL_password);
-	
-	
-	
-	
-	
-	
+	// Database Connection
+	try{
+		$SQL = new PDO('mysql:host='.SQL_host.';port='.$SQL_port.';dbname='.$SQL_database_name, $SQL_user_name, $SQL_password);
+	}
+	catch(Exception $e){
+		echo 'Une erreur est survenue !';
+		die();
+	}
 	
 	
 /***
