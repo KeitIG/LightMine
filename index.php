@@ -18,9 +18,10 @@ define('WEBSITE', 'online'); // online/offline
 
 define('ENVIRONMENT', 'development'); // development/test/released
 
-$resources_path = "src";
+$src_path = "src";
 $plugins_path = "plugins";
 $site_title = "";
+$root = $_SERVER['DOCUMENT_ROOT'];
 
 
 
@@ -61,7 +62,15 @@ $activated_plugins = array('sql', 'user');
 |
 */
 
-// Update Architecture
+// need test about $root output
+foreach($activated_plugins as $i)
+{
+	$plugin_path = $root.$src_path.'/plugins/'.$activated_plugins[$i].'php';
+	if(file_exists($plugin_path){
+		include $plugin_path;
+	}
+	// make error here
+}		
 
 
 
@@ -117,26 +126,26 @@ else{
   <head>
     <meta charset="utf-8">
     <title><?php echo $title." - ".ucfirst($page);?></title>
-    <link rel="stylesheet" href="<?php echo "/".$resources_path."/design/css/main.css"; ?>>
+    <link rel="stylesheet" href="<?php echo "/".$src_path."/design/css/main.css"; ?>>
   </head>
   
   <body>
   
     <header>
         <?php           
-            include($resources_path."/parts/header.php");    
+            include($src_path."/parts/header.php");    
         ?>
     </header>
     
     <section>
         <?php           
-            include($resources_path."/pages/".$page."php");    
+            include($src_path."/pages/".$page.".php");    
         ?>
     </section>
     
     <footer>
         <?php           
-            include($resources_path."/parts/footer.php");    
+            include($src_path."/parts/footer.php");    
         ?>
     </footer>
     
