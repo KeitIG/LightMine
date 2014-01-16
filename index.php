@@ -79,6 +79,20 @@ if (defined('ENVIRONMENT'))
 }
 
 
+/*
+|
+| ------------------------- RECUPERATION DE LA PAGE
+|
+*/
+
+if(isset($_GET["page"])){
+	$page = $_GET["page"];
+}
+else{
+	$page = "index";
+}
+
+
 
 /*
 |
@@ -105,7 +119,7 @@ if (defined('ENVIRONMENT'))
     
     <section>
         <?php           
-            include($resources_path."/parts/main.php");    
+            include($resources_path."/pages/".$page."php");    
         ?>
     </section>
     
