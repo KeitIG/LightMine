@@ -20,6 +20,7 @@ define('ENVIRONMENT', 'development'); // development/test/released
 
 $resources_path = "src";
 $plugins_path = "plugins";
+$site_title = "";
 
 
 
@@ -105,7 +106,7 @@ else{
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title><?php echo $title." - ".ucfirst($page);?></title>
     <link rel="stylesheet" href="<?php echo "/".$resources_path."/design/css/main.css"; ?>>
   </head>
   
