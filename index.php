@@ -51,7 +51,7 @@ else
 |
 */
 
-$activated_plugins = array('sql', 'users');
+$activated_plugins = array('sql', 'user');
 
 
 
