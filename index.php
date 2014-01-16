@@ -54,7 +54,17 @@ else
 $activated_plugins = array('sql', 'users');
 
 
-    
+
+/*
+|
+| ------------------------- PLUGINS ACTIVATION
+|
+*/
+
+// Update Architecture
+
+
+
 /*
 |
 | ------------------------- ERROR REPORTING
@@ -82,7 +92,7 @@ if (defined('ENVIRONMENT'))
 
 /*
 |
-| ------------------------- RECUPERATION DE LA PAGE
+| ------------------------- PAGE GETTER
 |
 */
 
@@ -97,13 +107,13 @@ else{
 
 /*
 |
-| ------------------------- CORPS HTML
+| ------------------------- HTML BODY
 |
 */
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="">
   <head>
     <meta charset="utf-8">
     <title><?php echo $title." - ".ucfirst($page);?></title>
