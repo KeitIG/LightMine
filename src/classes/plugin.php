@@ -2,7 +2,7 @@
 
 /*
 	-class(pre<html>)
-	-header(pre</head>
+	-header(pre</head>)
 	-script(pre</body>)
 */
 
