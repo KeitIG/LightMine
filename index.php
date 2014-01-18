@@ -23,6 +23,7 @@ define('ENVIRONMENT', 'development'); // development/test/released
 $src_path = "src";
 $plugins_path = "plugins";
 $site_title = "";
+$language = "";
 $root = $_SERVER['DOCUMENT_ROOT'];
 
 
@@ -89,7 +90,7 @@ if (defined('ENVIRONMENT'))
 		break;
 
 		default:
-			exit("L'application n'est pas correctement configurée.");
+			exit("the application is not corectly configured");
 	}
 }
 
@@ -117,7 +118,7 @@ else{
 ?>
 
 <!DOCTYPE html>
-<html lang="">
+<html lang="<?php echo $language; ?>">
   <head>
     <meta charset="utf-8">
     <title><?php echo $title." - ".ucfirst($page); ?></title>
