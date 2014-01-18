@@ -22,7 +22,7 @@ define('ENVIRONMENT', 'development'); // development/test/released
 
 $src_path = "src";
 $plugins_path = "plugins";
-$root = $_SERVER['DOCUMENT_ROOT'];
+$root = filter_input(INPUT_SERVER, 'DOCUMENT_ROOT');
 $site_title = "";
 $language = "";
 
@@ -103,8 +103,8 @@ if (defined('ENVIRONMENT'))
 |
 */
 
-if(isset($_GET["page"])){
-	$page = $_GET["page"];
+if(isset(filter_input(INPUT_GET, 'page'))){
+	$page = filter_input(INPUT_GET, 'page');
 }
 else{
 	$page = "index";
