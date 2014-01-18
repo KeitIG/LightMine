@@ -1,3 +1,5 @@
+/* Base for all browsers */
+
 *
 {
     padding: 0;
@@ -8,14 +10,21 @@ html, body {
 	height: 100%;
 }
 
+/*-------------------------------*/
+
+/* Page's header */
 header {
 	
 }
 
+/* Page's footer */
 footer {
 	
 }
 
+/* Page's main content */
 #main {
 	
 }
+
+/*-------------------------------*/
