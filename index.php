@@ -120,12 +120,11 @@ else{
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title><?php echo $title." - ".ucfirst($page);?></title>
-    <link rel="stylesheet" href="<?php echo "/".$src_path."/design/css/main.css"; ?>>
+    <title><?php echo $title." - ".ucfirst($page); ?></title>
+    <link rel="stylesheet" href="<?php echo "/".$src_path."/design/css/main.css"; ?>">
   </head>
   
   <body>
-  
     <header>
         <?php           
             include($src_path."/parts/header.php");    
@@ -143,6 +142,5 @@ else{
             include($src_path."/parts/footer.php");    
         ?>
     </footer>
-    
   </body>
 </html>
