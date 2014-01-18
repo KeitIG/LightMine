@@ -64,6 +64,7 @@ $activated_plugins = array('sql', 'user');
 |
 */
 
+include($root."/classes/plugin.php");
 // need test about $root output
 
 
