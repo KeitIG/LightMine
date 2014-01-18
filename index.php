@@ -5,7 +5,7 @@
                          |--------------------------- LIGHTMINE FRAMEWORK ---------------------------|
                           \-------------------------------------------------------------------------/ 
                           
-                          Wiki and more infotmations at https://github.com/KeitIG/LightMine
+                          Wiki and more informations at https://github.com/KeitIG/LightMine
 */
 
 
@@ -22,9 +22,9 @@ define('ENVIRONMENT', 'development'); // development/test/released
 
 $src_path = "src";
 $plugins_path = "plugins";
+$root = $_SERVER['DOCUMENT_ROOT'];
 $site_title = "";
 $language = "";
-$root = $_SERVER['DOCUMENT_ROOT'];
 
 
 
@@ -47,6 +47,7 @@ else
             exit('website offline');
     }
 }
+
 
 
 /*
@@ -93,6 +94,7 @@ if (defined('ENVIRONMENT'))
 			exit("the application is not corectly configured");
 	}
 }
+
 
 
 /*
