@@ -45,7 +45,7 @@ else
         case 'offline': 
             exit('website offline');
     }
-
+}
 
 
 /*
