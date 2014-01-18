@@ -8,6 +8,12 @@
 
 	class Plugin{
 		private $type;
+		
+		function __construct ($type){
+			$this->type = type;
+		}
+		
+		function __destruct() {
+		}
 	}
-
 ?>
