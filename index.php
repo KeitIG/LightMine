@@ -65,14 +65,6 @@ $activated_plugins = array('sql', 'user');
 */
 
 // need test about $root output
-foreach($activated_plugins as $i)
-{
-	$plugin_path = $root.$src_path.'/plugins/'.$activated_plugins[$i].'php';
-	if(file_exists($plugin_path){
-		include $plugin_path;
-	}
-	// make error here
-}		
 
 
 
