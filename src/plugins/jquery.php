@@ -1,3 +1,2 @@
 <?php 
 	// make jquery integration
-?>

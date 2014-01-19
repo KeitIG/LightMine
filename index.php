@@ -120,7 +120,7 @@ else{
 ?>
 
 <!DOCTYPE html>
-<html lang="<?php echo $language; ?>">
+<html<?php echo ' lang="'.$language.'"'; ?>>
   <head>
     <meta charset="utf-8">
     <title><?php echo $title." - ".ucfirst($page); ?></title>

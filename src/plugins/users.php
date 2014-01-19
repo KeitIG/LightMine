@@ -5,4 +5,3 @@
     	private $_mail;
     	private $_signup_date;
 	}
-?>
