@@ -1,4 +1,4 @@
-Mine
+LightMine
 ====
 
 Light Personal PHP framework
