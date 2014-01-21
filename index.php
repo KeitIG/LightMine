@@ -68,6 +68,7 @@ $activated_plugins = array('sql', 'user');
 */
 
 include($root."/".$src_path."/classes/plugin.php");
+// make activated plugins integration
 
 
 
@@ -114,6 +115,20 @@ else{
 
 /*
 |
+| ------------------------- HEADER SETTER
+|
+*/
+if (!empty($title)){
+    $site_title = $site_title." - ".ucfirst($page);
+}
+else{
+    $site_title = 'untitled page';
+}
+
+
+
+/*
+|
 | ------------------------- HTML BODY
 |
 */
@@ -123,7 +138,7 @@ else{
 <html<?php if (!empty($page)) echo ' lang="'.$language.'"'; ?>>
   <head>
     <meta charset="utf-8">
-    <title><?php echo $title." - ".ucfirst($page); ?></title>
+    <title><?php echo $site_title; ?></title>
     <link rel="stylesheet" href="<?php echo "/".$src_path."/design/css/main.css"; ?>">
   </head>
   
