@@ -17,12 +17,11 @@
 */
 
 define('WEBSITE', 'online'); // online/offline
-
 define('ENVIRONMENT', 'development'); // development/test/released
 
 $src_path = "src";
 $plugins_path = "plugins";
-$root = filter_input(INPUT_SERVER, 'DOCUMENT_ROOT');
+$root = dirname(__FILE__);
 $site_title = "";
 $language = "";
 
@@ -43,8 +42,10 @@ else
     switch (WEBSITE)
     {
         case 'online':
+            break;
         case 'offline': 
             exit('website offline');
+            break;
     }
 }
 
@@ -66,9 +67,7 @@ $activated_plugins = array('sql', 'user');
 |
 */
 
-include($root."/classes/plugin.php");
-// need test about $root output
-// include('filename.php', PHP_ONLY);
+include($root."/".$src_path."/classes/plugin.php");
 
 
 
@@ -104,7 +103,7 @@ if (defined('ENVIRONMENT'))
 |
 */
 
-if(isset(filter_input(INPUT_GET, 'page'))){
+if(isset($_GET['page'])){
 	$page = filter_input(INPUT_GET, 'page');
 }
 else{
@@ -121,7 +120,7 @@ else{
 ?>
 
 <!DOCTYPE html>
-<html<?php echo ' lang="'.$language.'"'; ?>>
+<html<?php if (!empty($page)) echo ' lang="'.$language.'"'; ?>>
   <head>
     <meta charset="utf-8">
     <title><?php echo $title." - ".ucfirst($page); ?></title>
