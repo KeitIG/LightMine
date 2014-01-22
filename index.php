@@ -177,7 +177,7 @@ else{
     <?php
     	foreach ($script_plugins as $i=>&$plugin) {
             echo '<script type="text/javascript" src="'.dirname($_SERVER['SCRIPT_NAME']).'/'.$src_path.'/librairies/'.$plugin->getFilename().'"></script>';  
-		}
+	}
     ?>
   </body>
 </html>
