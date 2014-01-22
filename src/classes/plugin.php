@@ -1,30 +1,65 @@
 <?php
 
 /*
-	-
+	- class(pre<html>) 
+	- header(pre</head>) 
+	- script(pre</body>)
 */
 
+
 	class Plugin{
-		private $_type; 
-			// class(pre<html>) 
-			// header(pre</head>) 
-			// script(pre</body>)
-		private $_name; 
-			// name of the class used by the plugin
 		
-		function __construct ($name, $type){
-			$this->_name = $name;
-			$this->_type = $type;
+		function __construct(){
 		}
 		
 		function __destruct() {
 		}
 	}
 
+
+
 /*
-
-	parent::__construct("class");
-
-	$exemple_plugin = new Plugin("script");
-
+|
+| ------------------------- SCRIPT PLUGIN
 */
+	
+	class PluginScript extends Plugin{
+		
+		private $_script_name;
+		
+		function __construct ($script_name){
+			$this->_script_name = $script_name;
+		}
+	}
+	
+
+
+/*
+|
+| ------------------------- HEADER PLUGIN
+|
+*/
+	
+	class PluginHeader extends Plugin{
+		
+		function __construct(){
+		}
+	}
+
+
+
+/*
+|
+| ------------------------- CLASS PLUGIN
+|
+*/
+
+	class PluginClass extends Plugin{
+		
+		private $_class_name;
+		
+		function __construct($script_name){
+			$this->_class_name = $script_name;
+		}
+	}
+	
