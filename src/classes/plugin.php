@@ -16,3 +16,11 @@
 		function __destruct() {
 		}
 	}
+
+/*
+
+	parent::__construct("class");
+
+	$exemple_plugin = new Plugin("script");
+
+*/
