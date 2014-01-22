@@ -6,7 +6,6 @@
 	- script(pre</body>)
 */
 
-
 	class Plugin{
 		
 		function __construct(){

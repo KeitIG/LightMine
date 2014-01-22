@@ -1,3 +1,3 @@
 <?php 
 
-	$plugin_jquery = new Plugin("jquery.js");
+	$plugin_jquery = new PluginScript("jquery.js");

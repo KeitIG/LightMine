@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*
                           /-------------------------------------------------------------------------\
                          |--------------------------- LIGHTMINE FRAMEWORK ---------------------------|
@@ -57,7 +59,7 @@ else
 |
 */
 
-$activated_plugins = array('sql', 'user');
+$activated_plugins = array('jquery', 'users', 'sql');
 
 $script_plugins = array(); // DO NOT TOUCH THESE VARIABLES
 $header_plugins = array();
@@ -172,9 +174,11 @@ else{
     
     
     <!-- Scripts -->
-    <?php 
-    	foreach ($activated_plugins as &$i) {
-			include($root."/".$src_path."/librairies".$i->getFilename().".php");
+    <?php
+    	foreach ($script_plugins as $i=>&$plugin) {
+            echo "<script>";
+            include($root."/".$src_path."/librairies/".$plugin->getFilename());
+            echo "</script>";
 		}
     ?>
   </body>
