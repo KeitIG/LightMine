@@ -11,5 +11,5 @@ To-Do List
 
 - ~~Main page~~
 - Plugin integration: ~~script~~, class & header
-- ~~JQuery integrration as plugin~~
+- ~~JQuery integration as plugin~~
 - Better meta generator in index.php
