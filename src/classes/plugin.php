@@ -32,6 +32,10 @@
 			global $script_plugins;
 			array_push($script_plugins, $this);
 		}
+		
+		function getFilename(){
+			return $this->_script_filename;
+		}
 	}
 	
 
