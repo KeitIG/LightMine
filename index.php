@@ -59,6 +59,10 @@ else
 
 $activated_plugins = array('sql', 'user');
 
+$script_plugins = array(); // DO NOT TOUCH THESE VARIABLES
+$header_plugins = array();
+$class_plugins = array();
+
 
 
 /*
@@ -69,6 +73,11 @@ $activated_plugins = array('sql', 'user');
 
 include($root."/".$src_path."/classes/plugin.php");
 // make activated plugins integration
+
+foreach ($activated_plugins as &$i) {
+	include($root."/".$src_path."/plugins/".$i.".php");
+}
+
 
 
 
@@ -160,5 +169,13 @@ else{
             include($src_path."/parts/footer.php");    
         ?>
     </footer>
+    
+    
+    <!-- Scripts -->
+    <?php 
+    	foreach ($activated_plugins as &$i) {
+			include($root."/".$src_path."/librairies".$i->getFilename().".php");
+		}
+    ?>
   </body>
 </html>
