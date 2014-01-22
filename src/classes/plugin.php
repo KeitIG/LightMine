@@ -25,10 +25,12 @@
 	
 	class PluginScript extends Plugin{
 		
-		private $_script_name;
+		private $_script_filename;
 		
-		function __construct ($script_name){
-			$this->_script_name = $script_name;
+		function __construct ($script_filename){
+			$this->_script_filename = $script_filename;
+			global $script_plugins;
+			array_push($script_plugins, $this);
 		}
 	}
 	
@@ -43,6 +45,8 @@
 	class PluginHeader extends Plugin{
 		
 		function __construct(){
+			global $header_plugins;
+			array_push($header_plugins, $this);
 		}
 	}
 
@@ -60,6 +64,8 @@
 		
 		function __construct($script_name){
 			$this->_class_name = $script_name;
+			global $class_plugins;
+			array_push($class_plugins, $this);
 		}
 	}
 	
