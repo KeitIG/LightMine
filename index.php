@@ -69,7 +69,7 @@ $class_plugins = array();
 
 /*
 |
-| ------------------------- PLUGINS ACTIVATION
+| ------------------------- PLUGINS ACTIVATION -- CLASS PLUGIN
 |
 */
 
