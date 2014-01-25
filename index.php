@@ -14,7 +14,7 @@
 
 /*
 |
-| ------------------------- HEADERS
+| ------------------------- HEADERS -- You can only modify THESE variables
 |
 */
 
@@ -23,16 +23,17 @@ define('ENVIRONMENT', 'development'); // development/test/released
 
 $src_path = "src";
 $root = dirname(__FILE__);
-$lightmine_version = "LightMine alpha-1"
+$lightmine_version = "LightMine alpha-1";
 
-// Meta <head> -- You can modify this ones as you want
+$activated_plugins = array('jquery', 'users', 'sql'); // List here your plugins
+
+// Meta <head>
 $site_title = "";
 $language = "";
 $meta_application_name = ''; // your site name
 $meta_description = '';
 $meta_keywords = ''; // tag1, tag2, tag3
 $meta_author = ''; // your name, or the one of your organization
-
 
 
 
@@ -66,8 +67,6 @@ else
 |
 */
 
-$activated_plugins = array('jquery', 'users', 'sql');
-
 $script_plugins = array(); // DO NOT TOUCH THESE VARIABLES
 $header_plugins = array();
 $class_plugins = array();
@@ -86,7 +85,6 @@ include($root."/".$src_path."/classes/plugin.php");
 foreach ($activated_plugins as &$i) {
 	include($root."/".$src_path."/plugins/".$i.".php");
 }
-
 
 
 
