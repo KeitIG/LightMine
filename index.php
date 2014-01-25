@@ -22,16 +22,17 @@ define('WEBSITE', 'online'); // online/offline
 define('ENVIRONMENT', 'development'); // development/test/released
 
 $src_path = "src";
-$plugins_path = "plugins";
 $root = dirname(__FILE__);
+$lightmine_version = "LightMine alpha-1"
+
+// Meta <head> -- You can modify this ones as you want
 $site_title = "";
 $language = "";
-
-// Meta <head>
 $meta_application_name = ''; // your site name
 $meta_description = '';
 $meta_keywords = ''; // tag1, tag2, tag3
 $meta_author = ''; // your name, or the one of your organization
+
 
 
 
@@ -159,8 +160,9 @@ else{
     <link rel="stylesheet" href="<?php echo "/".$src_path."/design/css/main.css"; ?>">
     <meta name="application-name" content="<?php echo $meta_application_name; ?>">
     <meta name="description" content="<?php echo $meta_description; ?>">
-	<meta name="keywords" content="<?php echo $meta_keywords; ?>">
-	<meta name="author" content="<?php echo $meta_author; ?>">
+    <meta name="keywords" content="<?php echo $meta_keywords; ?>">
+    <meta name="author" content="<?php echo $meta_author; ?>">
+    <meta name="generator" content="<?php echo $lightmine_version; ?>">
   </head>
   
   <body>
