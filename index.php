@@ -27,6 +27,12 @@ $root = dirname(__FILE__);
 $site_title = "";
 $language = "";
 
+// Meta <head>
+$meta_application_name = ''; // your site name
+$meta_description = '';
+$meta_keywords = ''; // tag1, tag2, tag3
+$meta_author = ''; // your name, or the one of your organization
+
 
 
 /*
@@ -151,6 +157,10 @@ else{
     <meta charset="utf-8">
     <title><?php echo $site_title; ?></title>
     <link rel="stylesheet" href="<?php echo "/".$src_path."/design/css/main.css"; ?>">
+    <meta name="application-name" content="<?php echo $meta_application_name; ?>">
+    <meta name="description" content="<?php echo $meta_description; ?>">
+	<meta name="keywords" content="<?php echo $meta_keywords; ?>">
+	<meta name="author" content="<?php echo $meta_author; ?>">
   </head>
   
   <body>
