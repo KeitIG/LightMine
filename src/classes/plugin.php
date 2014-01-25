@@ -36,22 +36,6 @@
 			return $this->_script_filename;
 		}
 	}
-	
-
-
-/*
-|
-| ------------------------- HEADER PLUGIN
-|
-*/
-	
-	class PluginHeader extends Plugin{
-		
-		function __construct(){
-			global $header_plugins;
-			array_push($header_plugins, $this);
-		}
-	}
 
 
 
