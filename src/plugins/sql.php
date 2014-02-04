@@ -31,5 +31,17 @@ class Sql {
         // Close database connection
         $this->_SQL = null;
     }
+    
+    function add() {
+        // Add entries in a table  
+    }
+    
+    function remove() {
+        // Remove entries in a table
+    }
+    
+    function set() {
+        // Rename entries in a table
+    }
 
 }
