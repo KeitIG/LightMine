@@ -71,7 +71,7 @@ $class_plugins = array();
   |
  */
 
-include($root . "/" . $src_path . "/classes/plugin.php");
+require_once($root . "/" . $src_path . "/classes/plugin.php");
 // make activated plugins integration
 
 foreach ($activated_plugins as &$i) {
