@@ -75,7 +75,7 @@ include($root . "/" . $src_path . "/classes/plugin.php");
 // make activated plugins integration
 
 foreach ($activated_plugins as &$i) {
-    include($root . "/" . $src_path . "/plugins/" . $i . ".php");
+    require_once($root . "/" . $src_path . "/plugins/" . $i . ".php");
 }
 
 
@@ -155,19 +155,19 @@ if (!empty($title)) {
         <div id="all">
             <header>
                 <?php
-                    include($src_path . "/parts/header.php");
+                    require_once($src_path . "/parts/header.php");
                 ?>
             </header>
 
             <section id="main">
                 <?php
-                    include($src_path . "/pages/" . $page . ".php");
+                    require_once($src_path . "/pages/" . $page . ".php");
                 ?>
             </section>
 
             <footer>
                 <?php
-                    include($src_path . "/parts/footer.php");
+                    require_once($src_path . "/parts/footer.php");
                 ?>
             </footer>
         </div>
