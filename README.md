@@ -14,5 +14,5 @@ To-Do List
 - ~~JQuery integration as plugin~~
 - ~~Better meta generator in index.php~~
 - Script plugins: include more languages than only Javascript
-- SQL Plugin development
-- User Plugin development
+- SQL Plugin development [in progress]
+- User Plugin development [in progress]
