@@ -175,7 +175,7 @@ if (!empty($title)) {
         <!-- Scripts -->
         <?php
             foreach ($script_plugins as $i => &$plugin) {
-                echo '<script type="text/javascript" src="' . dirname($_SERVER['SCRIPT_NAME']) . '/' . $src_path . '/librairies/' . $plugin->getFilename() . '"></script>';
+                echo '<script type="'.$plugin->get_filename().'" src="' . dirname($_SERVER['SCRIPT_NAME']) . '/' . $src_path . '/librairies/' . $plugin->get_filename() . '"></script>';
             }
         ?>     
     </body>
