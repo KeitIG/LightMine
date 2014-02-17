@@ -11,7 +11,7 @@
 
 /*
   |
-  | ------------------------- HEADERS -- You can only modify THESE variables
+  | ------------------------- HEADERS -- You should only modify THESE variables
   |
  */
 
