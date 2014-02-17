@@ -42,8 +42,12 @@
 			array_push($script_plugins, $this);
 		}
 		
-		function getFilename(){
+		function get_filename(){
 			return $this->_script_filename;
+		}
+		
+		function get_type_script(){
+			return $this->_script_type;
 		}
 	}
 
