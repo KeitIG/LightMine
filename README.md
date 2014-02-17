@@ -15,4 +15,6 @@ To-Do List
 - ~~Better meta generator in index.php~~
 - ~~Script plugins: include more languages than only Javascript~~
 - SQL Plugin development [in progress]
-- User Plugin development [in progress]
+- User Plugin development
+- Update Framework script
+- Root access for the owned
