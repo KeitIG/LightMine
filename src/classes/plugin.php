@@ -25,9 +25,19 @@
 	class PluginScript extends Plugin{
 		
 		private $_script_filename;
+		private $_script_type;
 		
+		// By default, $_script_type is Javasvascript
 		function __construct ($script_filename){
 			$this->_script_filename = $script_filename;
+			$this->_script_type = "text/javascript";
+			global $script_plugins;
+			array_push($script_plugins, $this);
+		}
+		
+		function __construct ($script_filename, $script_type){
+			$this->_script_filename = $script_filename;
+			$this->_script_type = $script_type;
 			global $script_plugins;
 			array_push($script_plugins, $this);
 		}
