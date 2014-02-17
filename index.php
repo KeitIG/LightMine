@@ -72,7 +72,6 @@ $class_plugins = array();
  */
 
 require_once($root . "/" . $src_path . "/classes/plugin.php");
-// make activated plugins integration
 
 foreach ($activated_plugins as &$i) {
     require_once($root . "/" . $src_path . "/plugins/" . $i . ".php");
@@ -123,6 +122,7 @@ if (isset($_GET['page'])) {
   | ------------------------- HEADER SETTER
   |
  */
+ 
 if (!empty($title)) {
     $site_title = $site_title . " - " . ucfirst($page);
 } else {
