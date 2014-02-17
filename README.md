@@ -17,4 +17,4 @@ To-Do List
 - SQL Plugin development [in progress]
 - User Plugin development
 - Update Framework script
-- Root access for the owned
+- Root access for the owner
