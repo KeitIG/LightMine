@@ -1,7 +1,6 @@
 <?php
 
-// Operations on MYSQL databases
-
+// Operations on MYSQL databases -- ONLY MYSQL IS SUPPORTED
 
 class Sql {
 
@@ -11,8 +10,14 @@ class Sql {
     private $_SQL_database_name = ''; // your database name
     private $_SQL_user_name = ''; // username used to connect to your database
     private $_SQL_user_password = ''; // username password
-    private $_SQL; // undefined by default
 
+    function __construct($SQL_host, $SQL_port, $SQL_database_name, $SQL_user_name, $SQL_user_password) {
+        $this->_SQL_host = $SQL_host;
+        $this->_SQL_host = $SQL_host;
+        $this->_SQL_host = $SQL_host;
+        
+    }
+    
     function connect() {
         // Database Connection
         try {
@@ -45,3 +50,4 @@ class Sql {
     }
 
 }
+
