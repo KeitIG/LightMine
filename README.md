@@ -10,12 +10,12 @@ To-Do List
 ----------
 
 Blueprint                                                         | Status
------------------------------------------------------------------ | -------------
-Main page                                                         | Achieved
-Plugin: script and class                                          | Achieved
-JQuery integration as plugin                                      | Achieved
-Better meta generator in index.php                                | Achieved
-Script plugins: include more languages than only Javascript       | Achieved
+----------------------------------------------------------------- | ------------------------
+Main page                                                         | Achieved (alpha-1)
+Plugin: script and class                                          | Achieved (alpha-1)
+JQuery integration as plugin                                      | Achieved (alpha-1)
+Better meta generator in index.php                                | Achieved (alpha-2)
+Script plugins: include more languages than only Javascript       | Achieved (not released)
 SQL Plugin development                                            | In progress
 User Plugin development                                           | In progress
 Update Framework version script                                   | Not started
