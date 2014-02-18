@@ -11,11 +11,7 @@ class Sql {
     private $_SQL_user_name = ''; // username used to connect to your database
     private $_SQL_user_password = ''; // username password
 
-    function __construct($SQL_host, $SQL_port, $SQL_database_name, $SQL_user_name, $SQL_user_password) {
-        $this->_SQL_host = $SQL_host;
-        $this->_SQL_host = $SQL_host;
-        $this->_SQL_host = $SQL_host;
-        
+    function __construct() {
     }
     
     function connect() {
@@ -51,3 +47,7 @@ class Sql {
 
 }
 
+
+// STARTING PLUGIN
+
+$SQL = new Sql();
