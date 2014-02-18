@@ -17,7 +17,7 @@ JQuery integration as plugin                                      | Achieved
 Better meta generator in index.php                                | Achieved
 Script plugins: include more languages than only Javascript       | Achieved
 SQL Plugin development                                            | In progress
-User Plugin development                                           | Not started
+User Plugin development                                           | In progress
 Update Framework version script                                   | Not started
-Root access for the owner + settings panel                        | Not started
-Mobile support                                                    | Not started
+Root access for the owner + settings panel                        | In discussion
+Mobile support                                                    | In discussion
