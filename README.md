@@ -7,9 +7,9 @@ Light Personal PHP framework
 
 
 To-Do List
-====
+----------
 
-Blueprint                                                         | Delivery
+Blueprint                                                         | Status
 ----------------------------------------------------------------- | -------------
 Main page                                                         | Achieved
 Plugin: script and class                                          | Achieved
