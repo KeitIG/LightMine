@@ -9,12 +9,15 @@ Light Personal PHP framework
 To-Do List
 ====
 
-- ~~Main page~~
-- ~~Plugin integration: script & class~~
-- ~~JQuery integration as plugin~~
-- ~~Better meta generator in index.php~~
-- ~~Script plugins: include more languages than only Javascript~~
-- SQL Plugin development [in progress]
-- User Plugin development
-- Update Framework script
-- Root access for the owner
+Blueprint                                                         | Delivery
+----------------------------------------------------------------- | -------------
+Main page                                                         | Achieved
+Plugin: script and class                                          | Achieved
+JQuery integration as plugin                                      | Achieved
+Better meta generator in index.php                                | Achieved
+Script plugins: include more languages than only Javascript       | Achieved
+SQL Plugin development                                            | In progress
+User Plugin development                                           | Not started
+Update Framework version script                                   | Not started
+Root access for the owner + settings panel                        | Not started
+Mobile support                                                    | Not started
