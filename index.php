@@ -109,8 +109,8 @@ if (defined('ENVIRONMENT')) {
   |
  */
 
-if (isset($_GET['page'])) {
-    $page = filter_input(INPUT_GET, 'page');
+if (isset($_GET['p'])) {
+    $page = filter_input(INPUT_GET, 'p');
 } else {
     $page = "index";
 }
